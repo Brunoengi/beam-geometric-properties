@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="ctn">
+    <div class="ctn-left">
+      <div>
+        <div class="form-title">
+          <p>Select the section:</p>
+          <select class="main-select">
+            <option value="rectangular">Rectangular</option>
+            <option value="T">T</option>
+            <option value="I">I</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div class="ctn-secondary">
+        <div class="ctn-inputs-button">
+          <div class="ctn-inputs">
+          </div>
+          <button class='btn-calculate'>Calcular</button>
+        </div>
+      
+      <div class="ctn-img">
+        <img class = 'img-helper' src='./images/rectangularSection.png'>
+      </div>
+    </div>
+    </div>
+    <div class="ctn-right">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./scripts/index.js" type="module"></script>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222831;
+  color: white;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 12px;
+  
+}
+
+select {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  text-align: center;
+  margin-left: 62px
+}
+
+hr {
+  border: 1px solid rgb(70, 70, 70);
+  margin: 0px 0px 20px 0px;
+}
+
+input {
+  max-width: 30px;
+  text-align: center
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+
+img { 
+  background-color: #000; /* Defina a cor de fundo que deseja */
+  mix-blend-mode: multiply;
+}
+
+.ctn {
+  display: flex;
+  height: calc(100vh - 20px);
+  padding: 10px 10px 10px 10px;
+}
+
+.form-title {
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+}
+
+.ctn-left {
+  flex: 5;
+  height: 500;
+  background: linear-gradient(300deg, #9bf1cd, #032d3a);
+  border-radius: 10px;
+  margin: 5px;
+  border: 1px solid rgb(120, 120, 120);
+  padding: 0px 20px 0px 20px;
+}
+
+.ctn-inputs {
+  display: inline;
+}
+
+.ctn-right {
+  flex: 5;
+  background-color: #393E46;
+  border-radius: 10px;
+  margin: 5px;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.ctn-inputs-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.ctn-secondary {
+  display: flex;
+  justify-content: space-between
+}
+
+.btn-calculate {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 8px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  max-width: 120px; 
+  font-size: 12px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 12px;  
+}
+
+.btn-calculate:hover {
+  background-color: #3e8e41;
+  transition: background-color 0.3s ease;
+}
+
+/* Table styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #ccc;
+  color: #444;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+  min-width: 85px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+tr:first-child {
+  border-bottom: 2px solid #ddd;
+}
+
+
