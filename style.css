@@ -38,71 +38,28 @@ input[type=number] {
 }
 
 img { 
-  background-color: #000; /* Defina a cor de fundo que deseja */
+  background-color: #000; 
   mix-blend-mode: multiply;
 }
 
-.ctn {
-  display: flex;
-  height: calc(100vh - 20px);
-  padding: 10px 10px 10px 10px;
-}
-
-.form-title {
-  display: flex;
-  padding: 20px 0px 20px 0px;
-  align-items: center;
-}
-
-.ctn-left {
-  flex: 5;
-  height: 500;
-  background: linear-gradient(300deg, #9bf1cd, #032d3a);
-  border-radius: 10px;
-  margin: 5px;
-  border: 1px solid rgb(120, 120, 120);
-  padding: 0px 20px 0px 20px;
-}
-
-.ctn-inputs {
-  display: inline;
-}
-
-.ctn-right {
-  flex: 5;
-  background-color: #393E46;
-  border-radius: 10px;
-  margin: 5px;
-  border: 1px solid rgb(120, 120, 120);
-}
-
-.ctn-inputs-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-}
-
-.ctn-secondary {
-  display: flex;
-  justify-content: space-between
-}
-
-.btn-calculate {
-  background-color: #4CAF50; 
+button {
+  background-color: #0d491d; 
   border: none; 
   color: white; 
   padding: 8px 32px; 
   text-align: center; 
   text-decoration: none; 
-  max-width: 120px; 
+  max-width: 120px;
+  min-width: 120px; 
   font-size: 12px; 
   margin: 4px 2px; 
   cursor: pointer; 
-  border-radius: 12px;  
+  border-radius: 8px;
+  border: 1px solid #0a3d0d;  
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, .6); 
 }
 
-.btn-calculate:hover {
+button:hover {
   background-color: #3e8e41;
   transition: background-color 0.3s ease;
 }
@@ -110,7 +67,6 @@ img {
 /* Table styles */
 
 table {
-  width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
   font-size: 12px;
@@ -124,7 +80,10 @@ th {
   padding: 10px;
   border: 1px solid #ddd;
   min-width: 85px;
-  
+}
+
+tbody:first-child {
+  border: 3px solid black;
 }
 
 tr:nth-child(even) {
@@ -144,5 +103,83 @@ td {
 tr:first-child {
   border-bottom: 2px solid #ddd;
 }
+
+/* Containers */
+
+.ctn {
+  display: flex;
+  height: calc(100vh - 20px);
+  padding: 10px 10px 10px 10px;
+}
+
+.ctn-form-title {
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+}
+
+.ctn-left {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex: 5;
+  background: linear-gradient(300deg, #9bf1cd, #0b556c);
+  margin: 2px;
+  border-radius: 10px;
+  border: 1px solid rgb(120, 120, 120);
+  padding: 0px 30px 0px 20px;
+}
+
+.ctn-inputs {
+  display: inline;
+}
+
+.ctn-right {
+  min-height: 100%;
+  flex: 5;
+  margin: 2px;
+  background-color: #393E46;
+  border-radius: 10px;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.ctn-inputs-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.ctn-inputs-img-results-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.ctn-secondary {
+  display: flex;
+  justify-content: space-between
+}
+
+.ctn-results-export {
+  display: flex;
+  flex-direction: column;
+}
+
+.ctn-results {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.ctn-results table {
+  margin-right: 20px;
+}
+
+.ctn-export {
+  align-items: end;
+}
+
 
 

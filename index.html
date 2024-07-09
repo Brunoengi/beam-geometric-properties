@@ -12,7 +12,7 @@
   <div class="ctn">
     <div class="ctn-left">
       <div>
-        <div class="form-title">
+        <div class="ctn-form-title">
           <p>Select the section:</p>
           <select class="main-select">
             <option value="rectangular">Rectangular</option>
@@ -22,17 +22,115 @@
         </div>
       </div>
       <hr>
-      <div class="ctn-secondary">
+      <div class="ctn-inputs-img-results-button">
+        <div class="ctn-secondary">
         <div class="ctn-inputs-button">
           <div class="ctn-inputs">
           </div>
-          <button class='btn-calculate'>Calcular</button>
+          <button class='btn-calculate'>Calculate</button>
         </div>
-      
-      <div class="ctn-img">
-        <img class = 'img-helper' src='./images/rectangularSection.png'>
+        <div class="ctn-img">
+          <img class='img-helper' src='./images/rectangularSection.png'>
+        </div>
+        </div>
+        <hr>
+        <div class="ctn-results-export">
+        <div class="ctn-results">
+          <table>
+            <thead>
+              <tr>
+                <th>Propertie</th>
+                <th>Value</th>
+                <th>Unit</th>
+              </tr> 
+            </thead>
+            
+            <tr>
+              <td>A</td>
+              <td></td>
+              <td>cm²</td>
+            </tr>
+            <tr>
+              <td>S<sub>x</sub></td>
+              <td></td>
+              <td>cm³</td>
+            </tr>
+            <tr>
+              <td>S<sub>y</sub></td>
+              <td></td>
+              <td>cm³</td>
+            </tr>
+            <tr>
+              <td>I<sub>x</sub></td>
+              <td></td>
+              <td>cm⁴</td>
+            </tr>
+            <tr>
+              <td>I<sub>y</sub></td>
+              <td></td>
+              <td>cm⁴</td>
+            </tr>
+            <tr>
+              <td>I<sub>xy</sub></td>
+              <td></td>
+              <td>cm⁴</td>
+            </tr>
+            <tr>
+              <td>X<sub>g</sub></td>
+              <td></td>
+              <td>cm</td>
+            </tr>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Propertie</th>
+                <th>Value</th>
+                <th>Unit</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Y<sub>g</sub></td>
+              <td></td>
+              <td>cm</td>
+            </tr>
+            <tr>
+              <td>I<sub>xg</sub></td>
+              <td></td>
+              <td>cm⁴</td>
+            </tr>
+            <tr>
+              <td>I<sub>yg</sub></td>
+              <td></td>
+              <td>cm⁴</td>
+            </tr>
+            <tr>
+              <td>Y<sub>1</sub></td>
+              <td></td>
+              <td>cm</td>
+            </tr>
+            <tr>
+              <td>Y<sub>2</sub></td>
+              <td></td>
+              <td>cm</td>
+            </tr>
+            <tr>
+              <td>W<sub>1</sub></td>
+              <td></td>
+              <td>cm³</td>
+            </tr>
+            <tr>
+              <td>W<sub>2</sub></td>
+              <td></td>
+              <td>cm³</td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="ctn-export"><button class="btn-export">Export</button></div>
+        </div>
       </div>
-    </div>
     </div>
     <div class="ctn-right">
       <canvas id="chart"></canvas>
