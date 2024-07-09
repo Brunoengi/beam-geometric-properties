@@ -1,6 +1,6 @@
 import GeometricProps from "../node_modules/geometric-props/dist/index.js";
 
-export function createPointsRectangule(b, h) {
+export function createPointsRectangule (b, h) {
   return [
     { 'x': b/2, 'y': 0 },
     { 'x': b/2, 'y': h },
@@ -42,6 +42,7 @@ export function createPointsI (bf, hf, bw, bi, hi, h) {
   ]
 }
 
-export function createIntanceGeometricProps(points) {
+export function createIntanceGeometricProps (points) {
+  console.log(new GeometricProps(points))
   return new GeometricProps(points)
 }

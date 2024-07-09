@@ -3,22 +3,25 @@ import { createPointsI, createPointsRectangule, createPointsT, createIntanceGeom
 import { destroyAndCreateCanvas } from './chart/render.js'
 import { setChart } from './chart/render.js'
 import { getMaxAndMinAxesI, getMaxAndMinAxesRectangule, getMaxAndMinAxesT } from './chart/functions.js'
+import { setValueOnTd } from './results/index.js'
+import { exportDataToTxt } from './export/index.js'
 import './geometricProps.js'
 import './chart/render.js'
 import './geometricProps.js'
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const getSelectComponent = document.querySelector('.main-select')
   const getButtonCalculate = document.querySelector('.btn-calculate')
+  const getButtonExport = document.querySelector('.btn-export')
   selectRectangule()
 
-  getSelectComponent.addEventListener('change', EventChangeSelect)
+  getSelectComponent.addEventListener('change', eventChangeSelect)
   getButtonCalculate.addEventListener('click', getInputsAndSelectValue)
+  getButtonExport.addEventListener('click', exportDataToTxt)
 })  
  
-function EventChangeSelect (e) {
+function eventChangeSelect (e) {
   destroyAndCreateCanvas()
   const imgHelperComponent = document.querySelector('.img-helper')
   const ctnInputsElement = document.querySelector(`.ctn-inputs`)
@@ -49,30 +52,34 @@ function getInputsAndSelectValue (e) {
 }
 
 function InputToGeometricProps (selectValue, arrInputValues) {
-  let bf, hf, bw, bi, hi, h
-  const imgHelperComponent = document.querySelector('.img-helper')
-  console.log(imgHelperComponent)
+  let bf, hf, bw, bi, hi, h, geometricProps
+  const keysGeometricProperties = ['A','Sx','Sy','Ix','Iy','Ixy','Xg','Yg','Ixg','Iyg','Ixyg','Y1','Y2','W1','W2']
   switch (selectValue) {
     case 'rectangular':
       const [base, height] = arrInputValues
       const geometricPointsRec = createPointsRectangule(base, height)
       const limitsRec = getMaxAndMinAxesRectangule(base, height)
       setChart(geometricPointsRec, limitsRec)
-      const geometricPropsRec = createIntanceGeometricProps(geometricPointsRec)
-      
-      break
+      geometricProps = createIntanceGeometricProps(geometricPointsRec)
+      setValueOnTd(geometricProps, keysGeometricProperties) 
+    break
     case 'T':
       [bf, hf, bw, h] = arrInputValues
       const geometricPointsT = createPointsT(bf, hf, bw, h)
       const limitsT = getMaxAndMinAxesT(bf, hf, bw, h)
       setChart(geometricPointsT, limitsT)
-      const geometricPropsT = createIntanceGeometricProps(geometricPointsT)
-      break
+      geometricProps = createIntanceGeometricProps(geometricPointsT)
+      setValueOnTd(geometricProps, keysGeometricProperties)
+    break
     case 'I':
       [bf, hf, bw, bi, hi, h] = arrInputValues
       const geometricPointsI = createPointsI(bf, hf, bw, bi, hi, h)
       const limitsI = getMaxAndMinAxesI(bf, hf, bw, bi, hi, h)
       setChart(geometricPointsI, limitsI)
-      const geometricPropsI = createIntanceGeometricProps(geometricPointsI)
-    } 
+      geometricProps = createIntanceGeometricProps(geometricPointsI)
+      setValueOnTd(geometricProps, keysGeometricProperties)
+    break
+  } 
+  localStorage.setItem('results', JSON.stringify(geometricProps))
+  
 }

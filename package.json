@@ -1,6 +1,6 @@
 {
   "name": "beam-geometric-properties",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "\"A project to calculate geometric properties of beams\"",
   "main": "dist/index.js",
   "scripts": {

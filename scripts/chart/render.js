@@ -1,6 +1,6 @@
 import { createPointsRectangule, createPointsT } from "../geometricProps.js";
 
-export function getChartComponent() {
+export function getChartComponent () {
   return document.getElementById('chart')
 }
 
