@@ -98,7 +98,7 @@ function createTableAndTh() {
 
 // Functions to each possible value in Select
 
-export function selectRectangule () {
+export function createFormSelectRectangule () {
   createTableAndTh()
   
   // Line 2
@@ -122,7 +122,7 @@ export function selectRectangule () {
   addContent('td-2-3', 'cm')
 } 
 
-export function selectT () {
+export function createFormSelectT () {
   createTableAndTh()
 
   // Line 2
@@ -166,7 +166,7 @@ export function selectT () {
   addContent('td-5-3', 'cm')
 }
 
-export function selectI () {
+export function createFormSelectI () {
   createTableAndTh()
 
   // Line 2

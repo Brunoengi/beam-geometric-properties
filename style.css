@@ -19,8 +19,11 @@ select {
 }
 
 hr {
-  border: 1px solid rgb(70, 70, 70);
-  margin: 0px 0px 20px 0px;
+  border: none;
+  height: 1px;
+  background-color: black;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
 }
 
 input {
@@ -38,8 +41,9 @@ input[type=number] {
 }
 
 img { 
-  background-color: #000; 
   mix-blend-mode: multiply;
+  box-shadow: 2px 2px 5px 2px black;
+  border-radius: 5px;
 }
 
 button {
@@ -115,7 +119,7 @@ tr:first-child {
 
 .ctn-form-title {
   display: flex;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 20px 20px 20px;
   align-items: center;
 }
 
@@ -128,7 +132,6 @@ tr:first-child {
   margin: 2px;
   border-radius: 10px;
   border: 1px solid rgb(120, 120, 120);
-  padding: 0px 20px 0px 20px;
 }
 
 .ctn-inputs {
@@ -160,12 +163,16 @@ tr:first-child {
 
 .ctn-secondary {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
 }
 
 .ctn-results-export {
   display: flex;
   flex-direction: column;
+  padding: 0px 20px 0px 20px;
+  background: linear-gradient(0deg, #0db6b6, #20ad0d00);
+  border-radius: 10px;
 }
 
 .ctn-results {

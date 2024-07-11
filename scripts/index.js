@@ -1,4 +1,4 @@
-import { createTable, createTh, createTr, getSelectValue, selectRectangule, selectT, clearContent, selectI } from './form/functions.js'
+import { createTable, createTh, createTr, getSelectValue, createFormSelectRectangule, createFormSelectT, clearContent, createFormSelectI } from './form/functions.js'
 import { createPointsI, createPointsRectangule, createPointsT, createIntanceGeometricProps } from './geometricProps.js'
 import { destroyAndCreateCanvas } from './chart/render.js'
 import { setChart } from './chart/render.js'
@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const getSelectComponent = document.querySelector('.main-select')
   const getButtonCalculate = document.querySelector('.btn-calculate')
   const getButtonExport = document.querySelector('.btn-export')
-  selectRectangule()
+  const imgHelperComponent = document.querySelector('.img-helper')
+  createFormSelectRectangule()
+  imgHelperComponent.src = './images/retangular200x200.png'
 
   getSelectComponent.addEventListener('change', eventChangeSelect)
   getButtonCalculate.addEventListener('click', getInputsAndSelectValue)
@@ -29,16 +31,16 @@ function eventChangeSelect (e) {
   const targetValue = e.target.value
   switch (targetValue) {
     case 'rectangular':
-      selectRectangule()
-      imgHelperComponent.src = './images/rectangularSection.png'
+      createFormSelectRectangule()
+      imgHelperComponent.src = './images/retangular200x200.png'
       break
     case 'T':
-      selectT()
-      imgHelperComponent.src = './images/TSection.png'
+      createFormSelectT()
+      imgHelperComponent.src = './images/T200x200.png'
       break
     case 'I':
-      selectI()
-      imgHelperComponent.src = './images/ISection.png'
+      createFormSelectI()
+      imgHelperComponent.src = './images/I200x200.png'
   }
 } 
 
