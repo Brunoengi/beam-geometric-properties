@@ -1,6 +1,6 @@
 <h1>UI - Beam Geometric Properties (en)</h1>
 
-<p>This project aims to demonstrate a user interface using the <i>geometric-props</i> library available at: click here. In this project, some figures that are commonly used as sections of reinforced concrete beams will be presented, such as rectangular section, T section and I section. In the application, a graphical library called <i>chart.js<i> is integrated to visualize the constructed section. Finally, it is possible to view and export the values ​​of geometric properties in txt format.</p>
+<p>This project aims to demonstrate a user interface using the <i>geometric-props</i> library available at: <a href='https://github.com/Brunoengi/geometric-props-ts'>click here.</a> In this project, some figures that are commonly used as sections of reinforced concrete beams will be presented, such as rectangular section, T section and I section. In the application, a graphical library called <i>chart.js<i> is integrated to visualize the constructed section. Finally, it is possible to view and export the values ​​of geometric properties in txt format.</p>
 
 <h2>Project Images</h2>
 
@@ -20,7 +20,7 @@
 
 <h1>UI - Propriedade Geométrica de Vigas (pt-br)</h1>
 
-<p>Este projeto tem como objetivo demonstrar uma interface do usuário em que é utilizado a biblioteca <i>geometric-props</i> disponível em: clique aqui. Nesse projeto, serão apresentadas algumas figuras que são comumente utilizadas como seção de vigas de concreto armado, como seção retangular, seção T e seção I. Na aplicação, é integralizada uma biblioteca gráfica chamada <i>chart.js<i> para visualização da seção construida. Por fim, é possível visualizar e exportar em formato txt os valores das propriedades geométricas.</p>
+<p>Este projeto tem como objetivo demonstrar uma interface do usuário em que é utilizado a biblioteca <i>geometric-props</i> disponível em: <a href='https://github.com/Brunoengi/geometric-props-ts'>clique aqui.</a> Nesse projeto, serão apresentadas algumas figuras que são comumente utilizadas como seção de vigas de concreto armado, como seção retangular, seção T e seção I. Na aplicação, é integralizada uma biblioteca gráfica chamada <i>chart.js<i> para visualização da seção construida. Por fim, é possível visualizar e exportar em formato txt os valores das propriedades geométricas.</p>
 
 <h2>Imagens do projeto:<h2>
 
