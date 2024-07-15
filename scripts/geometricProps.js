@@ -1,4 +1,4 @@
-import GeometricProps from "../node_modules/geometric-props/dist/index.js";
+import GeometricProps from "../node_modules/geometric-props/dist/esm/index.js";
 
 export function createPointsRectangule (b, h) {
   return [
