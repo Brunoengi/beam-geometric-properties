@@ -16,7 +16,7 @@
   "author": "Bruno Santos",
   "license": "ISC",
   "dependencies": {
-    "geometric-props": "^1.0.23",
+    "geometric-props": "^1.0.24",
     "i": "^0.3.7",
     "npm": "^10.8.1"
   }
